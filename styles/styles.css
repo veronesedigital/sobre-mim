@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --branco-padrao: #F6F6F6;
+    --azul-strong: #22D4FD;
+    --cor-de-fundo: #00030C;  
+    --fonte-krona-one: "Krona One";
+    --fonte-montserrat: "Montserrat"; 
+    --preto-hover: #272727;  
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-padrao)
+}
+
+.cabecalho {
+    margin: 2% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.apresentacao {
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+.apresentacao__conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 32px;
+}
+
+.apresentacao__cabecalho {
+    font-family: var(--fonte-krona-one);
+    font-weight: 400;
+    font-size: 36;
+    color: var(--branco-padrao);
+}
+
+.apresentacao__cabecalho strong {
+    color: var(--azul-strong);
+}
+
+.apresentacao__paragrafo {
+    font-family: var(--fonte-montserrat);
+    font-weight: 400;
+    font-size: 24;
+    color: var(--branco-padrao);
+}
+
+.apresentacao__redes {
+    font-family: var(--fonte-krona-one);
+    font-weight: 400;
+    font-size: 24;
+    color: var(--branco-padrao);
+}
+
+.apresentacao__imagem {
+    width: 460px;
+    height: 530px;
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apreentacao__links__link {
+    display: flex;
+    justify-content: center;
+    width: 378px;
+    padding: 16px 0;
+    border: 1px solid var(--azul-strong);
+    border-radius: 5px;
+    font-family: var(--fonte-montserrat);
+    font-weight: 500;
+    font-size: 24;
+    color: var(--branco-padrao);
+    text-decoration: none;
+    text-align: center;
+    gap: 16px;
+}
+
+.apreentacao__links__link:hover {
+    background-color: var(--preto-hover);
+}
+
+.menu__link {
+    font-family: var(--fonte-montserrat);
+    font-size: 24px;
+    color: var(--azul-strong);
+    text-decoration: none;
+    padding: 24px;
+}
+
+.menu__link:hover {
+    color: var(--branco-padrao);
+}
+
+.rodape {
+    display: block;
+    justify-content: center;
+}
+
+.rodape__texto {
+    font-family: var(--fonte-montserrat);
+    font-size: 16px;
+    color: var(--branco-padrao);
+    background-color: var(--preto-hover);
+    text-align: center;
+}
